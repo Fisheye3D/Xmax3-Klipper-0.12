@@ -1,0 +1,7 @@
+K-ShakeTune_results/belts/*.csv
+K-ShakeTune_results/belts/*.png
+K-ShakeTune_results/inputshaper/*.csv
+K-ShakeTune_results/inputshaper/*.png
+K-ShakeTune_results/vibrations/*.tar.gz
+K-ShakeTune_results/vibrations/*.png
+
