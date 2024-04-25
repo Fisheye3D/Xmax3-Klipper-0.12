@@ -1,3 +1,6 @@
+Changes to X-max 3, Screen replacement with BTT HDMI5 running of rasp pi zero 2 w, Dual side fans, Exhaust temp control, Led control, Cart probe, Config cleanup, and improvements.  Use at your own risk, I am not liable for any damage you may incur by using my config or macros. 
+
+
 ### Orca slicer start/end gcode provided or printer_start macros may be used, PLA/ABS macros in the macro folder. 
 
 
