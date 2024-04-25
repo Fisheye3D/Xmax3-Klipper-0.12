@@ -16,8 +16,10 @@ G0 Z0.2 F600 ; lower the nozzle to the start height
 G1 E3 F1800 ; prime the nozzle
 G0 Z0.3 F600 ; raise the nozzle slightly to avoid scratching the bed
 G1 X{min(first_layer_print_min[0] + 30,print_bed_max[0])} E6 F600 ; draw a purge line
+```
 
-End gcode:
+# Orca slicer End gcode:
+```
 G28 ; home all axes
 M104 S160 ; set extruder temperature to 160C
 M190 S[first_layer_bed_temperature] ; set bed temperature and wait for it to reach target
