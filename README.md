@@ -1,4 +1,4 @@
-Changes to X-max 3, Screen replacement with BTT HDMI5 running of rasp pi zero 2 w, Dual side fans, Exhaust temp control, Led control, Cart probe, Config cleanup, and improvements.  Use at your own risk, I am not liable for any damage you may incur by using my config or macros. 
+Changes to X-max 3, Screen replacement with BTT HDMI5 running of rasp pi zero 2 w, Dual side fans, Exhaust temp control, Led control, Cart probe, BTT SFS V2, Config cleanup, and improvements.  Use at your own risk, I am not liable for any damage you may incur by using my config or macros. 
 
 
 ### Orca slicer start/end gcode provided or printer_start macros may be used, PLA/ABS macros in the macro folder. 
@@ -22,10 +22,14 @@ G0 Z0.2 F600 ; lower the nozzle to the start height
 G1 E3 F1800 ; prime the nozzle
 G0 Z0.3 F600 ; raise the nozzle slightly to avoid scratching the bed
 G1 X{min(first_layer_print_min[0] + 30,print_bed_max[0])} E6 F600 ; draw a purge line
+
+SFS_on
 ```
 
 # Orca slicer End gcode:
 ```
+SFS_off
+
 M104 S0 ; turn off extruder
 M140 S0 ; turn off bed
 M141 S0 ; turn off chamber heater
