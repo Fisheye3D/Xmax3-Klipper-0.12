@@ -1,5 +1,5 @@
-#!/bin/bash
 
+<<<<<<< HEAD
 # IP address of the Klipperscreen
 ip="192.168.1.111"
 
@@ -31,3 +31,5 @@ if [ $? -eq 0 ]; then
 fi
 
 echo "Shutdown completed!"
+=======
+>>>>>>> 609ae0be75682c80f4a27d9c354ab6e572d3462a
