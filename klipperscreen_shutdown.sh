@@ -4,7 +4,7 @@
 ip="192.168.1.111"
 
 # Username and password
-user="pi"
+user="root"
 password="Epicchance1727"
 
 # Define countdown function
@@ -21,7 +21,7 @@ echo "Klipperscreen will be shut down:"
 countdown
 
 # Establish SSH connection with disabled host key checking and shut down Klipper screen
-sshpass -p "$password" ssh -o StrictHostKeyChecking=no $user@$ip "sudo shutdown -h now -n"
+sshpass -p "$password" ssh -o StrictHostKeyChecking=no $user@$ip "sudo shutdown -h now"
 
 # Check if the Klipper screen has been shut down
 sshpass -p "$password" ssh -o StrictHostKeyChecking=no $user@$ip "pgrep klipperscreen > /dev/null"
